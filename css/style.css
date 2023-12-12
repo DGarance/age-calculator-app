@@ -1,0 +1,155 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap");
+
+/* Initialisation */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Colors */
+  /* Primary*/
+  --purple: hsl(259, 100%, 65%);
+  --light-red: hsl(0, 100%, 67%);
+  /* Neutral */
+  --white: hsl(0, 0%, 100%);
+  --off-white: hsl(0, 0%, 94%);
+  --light-grey: hsl(0, 0%, 86%);
+  --smokey-grey: hsl(0, 1%, 44%);
+  --off-black: hsl(0, 0%, 8%);
+  /* Font */
+  --f-size: 24px;
+  --f-fam: "Poppins", sans-serif;
+}
+/* Mobile Version */
+
+body {
+  width: 100%;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--off-white);
+  font-family: var(--f-fam);
+}
+/* Main container CSS */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  border-radius: 25px 25px 100px 25px;
+  background-color: var(--white);
+}
+/* Inputs container CSS */
+.inputs-container {
+  display: flex;
+  padding: 40px 20px;
+}
+/* Inputs CSS */
+.input-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: start;
+  width: 100%;
+  padding: 10px;
+}
+
+.input-box label {
+  font-size: 14px;
+  font-weight: 100;
+  letter-spacing: 0.2rem;
+  margin: 5px 0;
+  text-transform: uppercase;
+  color: var(--smokey-grey);
+}
+
+.input-box input {
+  width: 100%;
+  font-size: 20px;
+  color: var(--off-black);
+  font-weight: 800;
+  border-radius: 8px;
+  border: 1px solid var(--light-grey);
+  padding: 10px;
+}
+hr {
+  width: 300px;
+  border: 1px solid var(--light-grey);
+}
+/* Button CSS */
+.button {
+  position: absolute;
+  top: 27%;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--purple);
+  border-radius: 50%;
+  cursor: pointer;
+}
+img {
+  width: 35px;
+}
+/* Results Container CSS */
+.results-container {
+  margin: 40px 0px;
+}
+.result-box {
+  width: 100%;
+}
+#years,
+#months,
+#days {
+  color: var(--purple);
+}
+.result-box span {
+  font-size: 55px;
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* Version desktop */
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 650px;
+    border-radius: 25px 25px 150px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .inputs-container {
+    padding: 30px 150px 30px 40px;
+  }
+  .input-box {
+    position: relative;
+  }
+  hr {
+    width: 550px;
+  }
+  .button {
+    position: absolute;
+    left: 65%;
+    top: 25%;
+  }
+  .results-container {
+    width: 85%;
+  }
+}
+.attribution {
+  margin: 40px 0;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
